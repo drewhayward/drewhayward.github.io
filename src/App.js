@@ -10,6 +10,7 @@ import { Row, Col } from 'react-bootstrap'
 import Container from 'react-bootstrap/Container'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/Home'
+import Publications from './pages/Publications'
 
 export default function App() {
   return (
@@ -18,9 +19,8 @@ export default function App() {
         <Navbar />
         <Container fluid='md'>
           <Switch>
-            <Route path="/about">
-            </Route>
-            <Route path="/users">
+            <Route path="/publications">
+              <Publications />
             </Route>
             <Route path="/">
               <Home />
