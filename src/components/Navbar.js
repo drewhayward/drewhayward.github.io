@@ -10,13 +10,13 @@ const navbar = () =>
         <Container fluid='sm'>
             <Navbar.Brand  as={Link} to="/">Drew Hayward</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
+            {/* <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
                 <Nav.Link as={Link} to="/">About</Nav.Link>
                 <Nav.Link as={Link} to="/publications">Publications</Nav.Link>
                 <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
                 </Nav>
-            </Navbar.Collapse>
+            </Navbar.Collapse> */}
         </Container>
     </Navbar>
     )
