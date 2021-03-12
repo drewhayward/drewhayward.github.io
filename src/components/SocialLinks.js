@@ -4,12 +4,12 @@ import { SocialIcon } from 'react-social-icons'
 
 const SocialLinks = () => (
     <Container >
-        <Row style={{justifyContent:'center'}}>
+        <Row style={{ justifyContent: 'left' }}>
+            {/* <Col xs="2">
+                <SocialIcon network="twitter" target="_blank" url="https://twitter.com/thedrewhayward" />
+            </Col> */}
             <Col xs="2">
-                <SocialIcon network="twitter" target="_blank" url="https://twitter.com/thedrewhayward"/>
-            </Col>
-            <Col xs="2">
-                <SocialIcon network="github" target="_blank" url="https://github.com/drewhayward"/>
+                <SocialIcon network="github" target="_blank" url="https://github.com/drewhayward" />
             </Col>
         </Row>
     </Container>
