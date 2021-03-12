@@ -19,15 +19,12 @@ export default function App() {
         <Navbar />
         <Container fluid='md'>
           <Switch>
-            <Route path="/publications">
-              <Publications />
-            </Route>
             <Route path="/">
               <Home />
             </Route>
           </Switch>
         </Container>
-        <Footer/>
+        <Footer />
       </div>
     </Router>
   );
