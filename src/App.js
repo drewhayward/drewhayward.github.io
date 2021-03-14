@@ -16,7 +16,7 @@ export default function App() {
   return (
     <Router basename='/'>
       <div>
-        <Navbar />
+        {/* <Navbar /> */}
         <Container fluid='md'>
           <Switch>
             <Route path="/">
