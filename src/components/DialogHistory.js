@@ -7,17 +7,16 @@ const DialogHistory = (props) => {
     let history = props.history
 
     const dialogHistory = history.map((pair, index) => (
-        <Row>
+        <Row key={index}>
             <Col>
-                <Row>
-                    <Col md="6">
-                        <p>{pair.question}</p>
+                <Row className="justify-content-start">
+                    <Col className="col-8 text-left">
+                        {pair.answer}
                     </Col>
                 </Row>
                 <Row className="justify-content-end">
-                    <Col md="6">
-                        {pair.answer}
-                        {/* <Typist cursor={{ hideWhenDone: true }}>{pair.answer}</Typist> */}
+                    <Col className="col-8 text-right">
+                        <p>{pair.question}</p>
                     </Col>
                 </Row>
             </Col>
@@ -30,6 +29,16 @@ const DialogHistory = (props) => {
             {dialogHistory}
         </div>
     )
+}
+
+const interBubbleStyle = {
+    "backgroundColor": "lightblue",
+    "borderRadius": "10px"
+}
+
+const aiBubbleStyle = {
+    "backgroundColor": "lightblue",
+    "borderRadius": "10px"
 }
 
 export default DialogHistory

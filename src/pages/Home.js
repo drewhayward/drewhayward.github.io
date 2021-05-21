@@ -25,7 +25,7 @@ class Home extends React.Component {
     }
 
     fetchQuestionAnswer(text) {
-        axios.post("http://localhost:8000/question/", {
+        axios.post("http://localhost:8080/question/", {
             'question': text
         }).then((resp) => {
             var answer = resp.data.answer
@@ -45,7 +45,7 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-                <Row className="justify-content-center align-items-center" fluid>
+                <Row className="justify-content-center align-items-center">
                     <Col style={{ 'textAlign': 'left', 'padding': 10, 'paddingTop': 30 }} md="auto" className="justify-items-center">
                         <Row className="justify-content-center align-items-center">
                             <Col md="4">
@@ -53,7 +53,7 @@ class Home extends React.Component {
                                     <Image src={profilePic} roundedCircle fluid />
                                 </Row>
                             </Col>
-                            <Col style={{ 'text-align': 'left' }} md="4">
+                            <Col style={{ 'textAlign': 'left' }} md="4">
                                 <h1>Drew Hayward</h1>
                                 <h5>I'm a software developer interested in language interfaces, ML Engineering, and building real-world systems.</h5>
                                 <SocialLinks />
