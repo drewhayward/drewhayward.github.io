@@ -10,14 +10,13 @@ import { Row, Col } from 'react-bootstrap'
 import Container from 'react-bootstrap/Container'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/Home'
-import Publications from './pages/Publications'
 
 export default function App() {
   return (
     <Router basename='/'>
       <div>
         {/* <Navbar /> */}
-        <Container fluid='md'>
+        <Container style={{"paddingBottom": '60px'}} fluid='md'>
           <Switch>
             <Route path="/">
               <Home />
