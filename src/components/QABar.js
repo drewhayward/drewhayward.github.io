@@ -32,29 +32,31 @@ class QABar extends React.Component {
     render() {
         return (
             <Row className="justify-content-left align-items-center" style={searchbarStyle}>
-                <Col>
+                <Col xs="10">
                     <input
                         value={this.state.inputText}
                         placeholder={this.state.hintText}
                         onFocus={this.onTextFocus}
                         onChange={this.onTextChange}
                         onKeyUp={this.onKeyUpHandler}
-                        style={{ border: "none", height: '41px', fontSize: '22pt', marginLeft: '3px', width: "95%", 'outline-width': 0 }}
+                        style={{ border: "none", height: '41px', fontSize: '22pt', marginLeft: '3px', width: "95%", 'outlineWidth': 0 }}
                         type="field" />
                 </Col>
-                <Col md="auto">
-                    <input
-                        value="?"
+                {/* <Col xs="2">
+                    <Button
                         style={buttonStyle}
                         onClick={() => this.setState({ showModal: true })}
-                        type="button" />
-                </Col>
+                        type="button">?</Button>
+                </Col> */}
                 <Modal show={this.state.showModal}>
                     <Modal.Header>
                         What is this?
                     </Modal.Header>
                     <Modal.Body>
-                        I built it!
+                        I deployed a question-answering model conditioned on a
+                        fact-heavy bio of myself. You can ask it questions about my
+                        experience, education, or whatever, and it will try to answer
+                        them.
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={() => this.setState({ showModal: false })}>Close</Button>
@@ -66,7 +68,7 @@ class QABar extends React.Component {
 
 const buttonStyle = {
     "backgroundColor": "none",
-    "borderRadius": "20px"
+    "borderRadius": "48px"
 }
 
 const searchbarStyle = {
