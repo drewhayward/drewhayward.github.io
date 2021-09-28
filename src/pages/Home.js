@@ -15,8 +15,10 @@ const Home = () => (
                 <h1>Drew Hayward</h1>
                 <p>Master's Student at Michigan State University</p>
                 <SocialLinks />
-                <p>I'm interested in the intersection of learning, language understanding and reasoning. <br />
-                        Currently, I'm exploring the use of neuro-symbolic approaches in Visual Question Answering.</p>
+                <p>Hi! I'm a masters student with training in Natural Language Processing and Machine Learning.<br />
+                Currently, I'm looking for positions where I can leverage my experience in an engineering role and grow my engineering skills.<br />
+                If you'd like to chat feel free to send me an email.
+                </p>
             </Col>
         </Row>
     </Container>

@@ -6,10 +6,13 @@ const SocialLinks = () => (
     <Container >
         <Row style={{justifyContent:'center'}}>
             <Col xs="2">
-                <SocialIcon network="twitter" target="_blank" url="https://twitter.com/thedrewhayward"/>
+                <SocialIcon network="github" target="_blank" url="https://github.com/drewhayward"/>
             </Col>
             <Col xs="2">
-                <SocialIcon network="github" target="_blank" url="https://github.com/drewhayward"/>
+                <SocialIcon network="instagram" target="_blank" url="https://instagram.com/drewhayward"/>
+            </Col>
+            <Col xs="2">
+                <SocialIcon network="email" target="_blank" url="mailto:d.andrew.hayward@gmail.com"/>
             </Col>
         </Row>
     </Container>
