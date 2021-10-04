@@ -9,6 +9,9 @@ const SocialLinks = () => (
                 <SocialIcon network="github" target="_blank" url="https://github.com/drewhayward"/>
             </Col>
             <Col xs="2">
+                <SocialIcon network="linkedin" target="_blank" url="https://www.linkedin.com/in/drew-hayward-b25886133/"/>
+            </Col>
+            <Col xs="2">
                 <SocialIcon network="instagram" target="_blank" url="https://instagram.com/drewhayward"/>
             </Col>
             <Col xs="2">
