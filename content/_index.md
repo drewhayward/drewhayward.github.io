@@ -1,7 +1,8 @@
-+++
-title = "Drew Hayward"
-+++
+---
+title: About Me
+---
 
 
-# Welcome
-this is coming from my homepage
+# Drew Hayward
+
+I have the unreasonable desire to know how everything works.
