@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <title>Drew Hayward</title>
-</head>
-
-<body>
-        
-  <section class="section">
-    <div class="container">
-      {% block content %} {% endblock content %}
-    </div>
-  </section>
-
-  {% include "partials/footer.html" %}
-</body>
-
+    <head>
+        <meta charset="utf-8">
+        <title>Drew Hayward</title>
+    </head>
+    <body>
+        <h1>Drew Hayward</h1>
+        <main class="section">
+            <div class="base_container">
+                {% block content %} {% endblock content %}
+            </div>
+        </main>
+        <footer>
+            <p>© 2025 Drew Hayward</p>
+        </footer>
+    </body>
 </html>
